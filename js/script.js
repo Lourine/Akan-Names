@@ -4,5 +4,12 @@ function getAkanName(CC, YY, MM, DD) {
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 var namesMale = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 var namesFemale = ["Akosua", "Adowa", "Abena", "Akua", "Yaa", "Afua", "Ama"];
-var gender;
+var mygender = document.getElementsByName("gender");
+var myBirthday =document.getElementById("birthday").value;
 var dayOfTheWeek = getAkanName();
+if(genders[0].checked == true){
+    var mygender = "male";
+  }
+  else if(mygender[1].checked == true){
+    var gender = "female";
+  }
