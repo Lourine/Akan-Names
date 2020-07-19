@@ -16,26 +16,21 @@
       
         <form>
               <p>Please enter your birthday here</p>
-              <label for="Century">Century:</label>
-              <input type="text" id="century" name="CC" value="eg 19 for 1989">
-              <label for="Year">Year:</label>
-              <input type="text" id="Year" name="YY" value="eg 1989">
-              <label for="Month">Month:</label>
-              <input type="text" id="month" name="MM">
-              <label for="Day">Day:</label>
-              <input type="text" id="day" name="DD">
+              <label for="birthday">Birthday:</label>
+              <input type="date" placeholder="mm/dd/yy" id="birthDate">
               <p>Please select your gender:</p>
               <label for="Gender">Gender:</label><br>
               <input type="radio" id="male" name="gender" value="male">
               <label for="male">Male</label><br>
               <input type="radio" id="female" name="gender" value="female">
               <label for="female">Female</label><br>
-              <button type="submit"class = "button" onclick="getAkanName()">Get Akan Name</button>
-              <a href="#result"><button type="reset" class = "button">Reset</button></a>
-              <p id="result"></p>
-            </form>
-          </div>
+            ` <a href="#result"><button type="submit"class = "button" onclick="getAkanName();">Get Akan Name</button></a>
+              <button type="reset" class = "button">Reset</button>
+              
         </form>
+        <div id="final result">
+          <p id="result"></p>
+        </div>
    
     </div>
     <script src="js/script.js"></script>
