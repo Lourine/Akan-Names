@@ -1,11 +1,10 @@
-
-  function getAkanName(){
+function getAkanName(){
   var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
   var namesMale = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
   var namesFemale = ["Akosua", "Adowa", "Abena", "Akua", "Yaa", "Afua", "Ama"];
   var mygender = document.getElementById("gender");
-  var myBirthday =document.getElementById("birthDate");
-  var dateOfBirth=new Date(myBirthday);
+  var myBirthdate =document.getElementById("birthDate");
+  var dateOfBirth=new Date(myBirthdate);
   var dayOfWeek = dateOfBirth.getDay();
   if (mygender[0].checked == true) {
     switch (dayOfWeek) {
