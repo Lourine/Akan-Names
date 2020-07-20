@@ -5,7 +5,6 @@
 This is a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. 
 Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.
 ## Setup/Installation Requirements
-* 
 - Clone this repository to a location in your file system. `git clone https://github.com/Lourine/Akan-Names.git
 - Open terminal command line then navigate to the root folder of the application by use of $cd commands.
 -Open the folder in your code editor using the command $code . for (VS Code)
