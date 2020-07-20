@@ -6,7 +6,10 @@ function getAkanName(){
   var myBirthdate =document.getElementById("birthDate");
   var dateOfBirth=new Date(myBirthdate);
   var dayOfWeek = dateOfBirth.getDay();
-  if (mygender[0].checked == true) {
+  if(myBirthday == ""){
+    document.getElementById("result").innerHTML ="Invalid Input!!";
+  }
+  if (document.getElementById("male").checked){
     switch (dayOfWeek) {
       case 0:
         document.getElementById("result").innerHTML=`You were born on ${day[0]} and Your akan name is ${namesMale[0]}!`;
@@ -29,7 +32,7 @@ function getAkanName(){
       case 6:
         document.getElementById("result").innerHTML=`You were born on ${day[6]} and Your akan name is ${namesMale[6]}!`;
     }}
-    else {
+    else if (document.getElementById("female").checked){
        switch (dayOfTheWeek) {
       case 0:
         document.getElementById("result").innerHTML=`You were born on ${day[0]} and Your akan name is ${namesFemale[0]}!`;
@@ -53,4 +56,12 @@ function getAkanName(){
         document.getElementById("result").innerHTML=`You were born on ${day[6]} and Your akan name is ${namesFemale[6]}!`;
     }
   }
+    else{
+      document.getElementById("result")="Invalid Input";
+    }
   }
+  
+  
+  function clearAkanMessage(){
+    document.getElementById("result").innerHTML = "";
+}
